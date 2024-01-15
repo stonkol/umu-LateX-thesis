@@ -1,13 +1,17 @@
 # Umeå University LateX Thesis Template
-Master's Thesis template in LaTeX for Umeå University, specifically the one for the [Department of Informatics](https://www.umu.se/en/department-of-informatics/). Feel free to use it :stuck_out_tongue:
+Master's Thesis template in LaTeX for Umeå University, specifically the one for the Department of [Informatics](https://www.umu.se/en/department-of-informatics/). 
+
+## Feel free to **[download](https://github.com/stonkol/umu-LateX-thesis/blob/main/Umu_Layout_Template.tex)** it :stuck_out_tongue:
 
 > [!IMPORTANT]
-If you are using [Overleaf](https://www.overleaf.com/): project settings (Menu) > change compiler: [LuaLaTex] 
+If you are using [Overleaf](https://www.overleaf.com/): you should go to > `Project Settings (Menu)` > change Compiler to `LuaLaTex` 
 
 ## Contributing
 Want to improve or fix something? 
 
 You can Fork this repo, and then make a pull request from your fork.
+
+[:-)
 
 ## Acknowledgment:
 
