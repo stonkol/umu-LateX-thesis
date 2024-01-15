@@ -7,7 +7,7 @@ If you are using [Overleaf](https://www.overleaf.com/): project settings (Menu) 
 ## Contributing
 Want to improve or fix something? 
 
-You can Fork this repo, and then pull request from your fork.
+You can Fork this repo, and then make a pull request from your fork.
 
 ## Acknowledgment:
 
