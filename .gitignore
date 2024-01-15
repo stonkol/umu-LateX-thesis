@@ -1,0 +1,49 @@
+# macOS system files
+.DS_Store
+
+# VSCode directories
+.vscode/
+.history/
+
+# Node.js
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+
+# macOS Finder metadata
+._*
+
+# User-specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# JetBrains
+.idea/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
