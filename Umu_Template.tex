@@ -1,0 +1,443 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% IMPORTANT: In Overleaf project settings (Menu) > change compiler: [LuaLaTex] %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+
+\documentclass[]{article}
+\usepackage{amsmath,amssymb}
+\usepackage[style=apa]{biblatex}
+\usepackage{iftex}
+\usepackage{titlesec}
+
+% Change all the margins to  2.5cm, headers from edge: 1.25cm, footer from edge: 1.25cm
+\usepackage[margin=2.5cm, top=1.25cm, bottom=1.25cm, headheight=15pt]{geometry}
+
+%%%%%%%%%%%%%%%%%% HEADING FORMAT %%%%%%%%%%%%%%%%%%%%%%
+% Heading 1 (Section)
+\titleformat{\section}
+  {\fontsize{16}{18}\bfseries}
+  {\thesection}
+  {24pt}
+  {}
+  [\titlespacing*{\section}{0pt}{24pt}{6pt}]
+% Heading 2
+\titleformat{\section}
+  {\fontsize{14}{16}\bfseries}
+  {\thesection}
+  {12pt}
+  {}
+  [\titlespacing*{\section}{0pt}{12pt}{3pt}]
+
+% Heading 3
+\titleformat{\subsection}
+  {\fontsize{12}{14}\bfseries}
+  {\thesubsection}
+  {12pt}
+  {}
+  [\titlespacing*{\subsection}{0pt}{12pt}{0pt}]
+
+\ifPDFTeX
+%%%%%%%%%%%%%%%% FONT -> Georgia %%%%%%%%%%%%%%%%%
+  \usepackage{fontspec}
+  \setmainfont{Georgia}
+  
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\ifLuaTeX
+  \usepackage{luacolor}
+  \usepackage[soul]{lua-ul}
+\else
+  \usepackage{soul}
+\fi
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\section{\centering Abstract}\label{abstract}
+
+\emph{Your thesis should start with an abstract. The abstract should be
+approximately 150 words long, written in Georgia 11 points, italics. It
+must include the research question, basis for research, method, findings
+and conclusions. That is, you want to tell the reader what you did, why
+you did it, how you did it, what was the result of what you did, and how
+does this contribute to research? An example abstract can be found in
+Appendix 1. Beneath your abstract, you should list some keywords. These
+give the reader a quick overview of the most important concepts in your
+thesis.}
+
+\textbf{Keywords}: Form, content, style, User Experience, Tangible,
+music production
+
+\section{1. General}\label{general}
+
+The first chapter (1. General) should start immediately after the
+abstract, not on a new page, and there should be no index in the thesis.
+Master thesis work at the department of informatics is digitally
+published in the DIVA system, administered by the University library, and
+we want them to be consistent when it comes to format and style.
+
+This document provides information concerning the required layout of the
+thesis when published. Note that this document itself uses the layout
+template it describes. Every word in this document belongs to a style, so
+by clicking on different places you will see the style is used to
+implement all features of the layout. Your thesis has a specific page
+limit (20–25 pages for Master's 15 credits and Magister's 15 credits,
+and 25–30 pages for Master's 30 credits, excluding references and
+maximum 10 pages of appendices). Use them well, and remember that your
+thesis should \ul{not} have an index!
+
+\section{2. Headings (Heading 1)}\label{headings-heading-1}
+
+Divide your article into clearly defined and numbered sections.
+Subsections should be numbered 1.1 (then 1.1.1, 1.1.2, ...), 1.2, etc.
+The abstract is not included in section numbering. Any section or
+subsection should be given a brief heading. Each heading should appear
+on its own separate line. Headings on different levels have different
+layout (be consistent!). Section headings are written with 16 points,
+bold. The spacing before should be 24 points and after 6 points. The
+font in all headings should be Georgia.
+
+\subsection{2.1 Heading 2}
+
+Sublevel headings are 14 points bold. Spacing before should be 12
+points, and after 3 points.
+
+2.1.1 Heading 3
+
+Third level headings should be 12 points bold. Spacing before 12 points,
+and after 0 points. Try to avoid more sublevels. If you feel it is
+absolutely necessary, do the next level like Heading 3, but not in bold.
+
+\section{3. Layout}
+
+\subsection{3.1 The body of the text}
+
+The body of the text should be written using Georgia, 11 points. The
+line spacing should be exactly 16 points. The margins should be
+justified (i.e. stretched towards both margins).
+
+New paragraphs are indented 0.5 cm in the first line, except the first
+paragraph after a heading, quote or figure. There should not be empty
+lines between paragraphs. Page numbers must be centred in the footer
+and start on the same page as your abstract and introduction. All
+margins should be set to 2.5 cm.
+
+\subsection{3.2 The first page}
+
+The first page of the thesis should start with an abstract. The purpose
+of an abstract is to give the reader a quick overview of the major
+points of the thesis. The abstract should be approximately 150 words
+long, in Georgia 11 points, italics. The heading should be centred. An
+example can be found in Appendix 1. After the abstract, you should list
+some keywords central for your thesis. Then you move on to your
+introduction.
+
+\subsection{3.3 The title page}
+
+The published thesis should have a cover page. That page has no page
+number. The design of the cover is an Umeå University standard. Just
+edit the template (another than this one) page by filling in your data
+instead of the dummy data found in this template. Before publication,
+your thesis will get a unique number in the department's publication
+series. This should be put at the bottom of the title page. The course
+administrator will provide that number when it is time for publication
+of the thesis.
+
+\subsection{3.4 Footnotes and references}
+
+Footnotes should be used restrictively, numbered in sequence, and be
+placed at the bottom of the page. The text in these should be Georgia,
+10 points and the line spacing should be single\footnote{This is what a
+  footnote looks like. Please try to use footnotes as little as
+  possible.}. A footnote can for example be used for short
+clarifications.
+
+References in the text are done by stating the author(s) and year of
+publication within parenthesis, for instance (Churchman, 1968) or
+Churchman (1968) dependent upon if you want to use a strong or weak
+referencing style. If the reference list contains more than one item by
+the same author(s) from the same year, they are separated by adding a, b
+and so on, to the year, for instance (Churchman, 1968b).
+
+If there are more than two authors, you should list all authors the
+first time the reference appears in the text (Jonsson, Westergren \&
+Holmström, 2008) and the next time you only name the first author and
+use et al. for the others (Jonsson et al., 2008). The full reference
+should be provided in the reference list at the end of the thesis. The
+layout for the reference list is shown in Appendix 2.
+
+\subsection{3.5 Tables, figures, pictures}
+
+For this kind of content there is no specific layout, just make sure it
+is clear, easy to interpret and informative. All tables, figures and
+pictures should be numbered, centered and have a text describing their
+content. The number of the figure and the text should also be centered,
+written in Georgia, 11 points, \emph{italics}, with 12 points spacing
+before and 6 points after. The paragraph following the figure text
+should have no indentation.
+
+\subsection{3.6 Quotes}
+
+If you are citing someone else's work, you must do this by enclosing the
+cited text with quotation marks, followed by a reference including
+author and page number. There are two main ways to do this:
+
+\textbf{Example 1)} Mason (2002, p. 39) states: ``If your research is
+valid, it means that you are observing, identifying or `measuring' what
+you say you are''.
+
+\textbf{Example 2)} On the subject of validity it has been said that
+``If your research is valid, it means that you are observing,
+identifying or `measuring' what you say you are'' (Mason, 2002, p. 39).
+
+For longer quotes (more than 3 lines) you should use the specific
+quotation style. It is the same as the body, except that the text is in
+italics and the lines start and end 1 cm inside the normal margins.
+Also, the line spacing is 15 points. A long quote should look like this:
+
+``The fourth implication concerns the risk of going from stable to
+rigid. The interlocked behaviour cycle was seen as ``solving'' the
+problem of finding the necessary stability for organizational
+operations. The problem of finding stability shifts in information
+systems, such systems have different problems. In information systems,
+the balance may tilt too far in the direction of stability. Instead,
+avoiding rigidity becomes a problem'' (Nordström, 2003, p. 94).
+
+\subsection{3.7 Appendix}
+
+Note that as an appendix to the essay, there must also be a short
+account - at most one page - of each student\textquotesingle s
+contribution to the thesis project. There are no formal requirements for
+this report that may be formulated freely. The reason why this appendix
+should be included with the report is that students\textquotesingle{}
+performance should be able to be assessed individually also in
+connection with group work. Note that each student must contribute to
+all assessment criteria for the thesis project, but within each
+criterion you can of course divide work.
+
+As the thesis has a page limit, you might want to consider placing some
+images and tables (that are not crucial for understanding your
+argumentation) in an appendix (as this is excluded from the page count).
+All appendices should be numbered and placed at the end of the thesis,
+after the reference list. The same layout instructions should be applied
+to the text in the appendix. The only difference is that you must
+include a header, like in the two appendices to this document. A maximum
+of 10 pages can be used for appendices.
+
+\section{Abstract}\label{abstract-1}
+
+\emph{The open innovation model embraces the purposive flow of internal
+and external ideas as a foundation for innovation and network formation.
+While the open innovation paradigm has been successfully applied in
+high-tech settings, there is a lack of research on adopters of open
+innovation in other settings. We describe a case study conducted in a
+process industry setting, focusing on the LKAB minerals group as it
+makes a transition from a closed to a more open innovation context by
+adopting remote diagnostics technology. This process has resulted in the
+creation of new value networks. By tracing the reasoning behind the
+organizational transformation and studying the technology used to carry
+it through, we seek to explore the preconditions for open innovation and
+provide insight into the role of IT in the process. Our findings show
+that adoption of the open innovation model is grounded in developing
+organizational environments that are conducive to innovation, including
+expertise in creating a culture for knowledge sharing, building a
+trustful environment, and a resourceful use of IT.}
+
+\textbf{Keywords}: Open innovation, remote diagnostics, trust, value
+networks
+
+\section{1. Introduction}\label{introduction}
+
+Contemporary industrial firms are under pressure. While they once took
+pride in producing sought-after, superior quality products and exporting
+them for profit, manufacturers are now being overtaken by firms located
+in high-tech, low wage nations where products of comparable quality are
+produced at much lower costs (Banker, Bardhan, Chang \& Lin, 2006;
+Houseman, 2007). In order to regain its competitive advantage, industry
+must re-invent itself by looking for alternative approaches to value
+production. One approach is to improve the effectiveness and efficiency
+of production, partly by organizational re-structuring, but also by
+investing heavily in new information technology (IT) to develop
+industrial processes. By using IT to monitor the production line, the
+process can be speeded up and made more efficient, more streamlined, and
+more cost-effective. To this end, the evolution in remote sensing
+technology holds particular promise as it enables firms to monitor
+complex processes from a distance.
+
+Remote sensing has to date received some, but not sufficient, attention
+within our field, for example through the work of Zuboff (1988), who
+studied the use of smart machines within the pulp-and paper industry,
+Puri (2007), with his work on the use of GIS in India, and Østerlie,
+Almklov and Hepsø (2012) who studied undersea oil well maintenance.
+These researchers have all shown how the use of IT creates possibilities
+for knowledge generation. As industries now embrace the use of remote
+sensing, they come into close contact with the technological potential
+for boundary-spanning activities (Jonsson, Holmström \& Lyytinen, 2009),
+hence providing the firms with an opportunity for both internal and
+external process innovation and new ways of value creation.
+
+\section{References (this is the heading you must use, and it should not
+be
+numbered)}\label{references-this-is-the-heading-you-must-use-and-it-should-not-be-numbered}
+
+All of you should know that this is the general format for all of your
+references in your reference list. The references must be listed in
+alphabetical order. In this example, the references are listed in the
+appendix. In your thesis, they should be listed after your final section.
+For further examples of how to write your references, please see the
+next page!
+
+Berggren, U. and Bergkvist, T. (2006) Industrial Service Innovations --A
+Disregarded Growth Engine. NUTEK, Report B2006:6, Available at:
+http://pubikationer.tillvaxtverket.se, Accessed May 6, 2009.
+
+Nilsson, K. (1989) Designing for Creativity - Toward a Theoretical Basis
+for the Design of Interactive Information Systems. (UMADP-RRIPCS-8.89),
+Institute of Information Processing, Umeå University, Umeå
+
+Mason, J. (2002) \emph{Qualitative Researching}. London: Sage
+Publications
+
+Robey, D. (1981) Computer information systems and organization
+structure. \emph{Communications of the ACM}, 24(10), pp. 679-687
+
+Smith, A. (2012) New IT frightens teenagers. \emph{Daily News}, Jan. 23,
+pp. 7-8
+
+Walsham, G. (1997) Actor-network theory and IS research: Current status
+and future prospects. In Lee, A.S., Libenau, J. \& J.I. DeGross (Eds.),
+\emph{Information systems and qualitative research}, New York: Chapman
+\& Hall, pp. 466-480.
+
+Lientz, B. P. \& Swanson, E. B. (1980). \emph{Software Maintenance
+Management}. Reading, Mass.: Addison-Wesley.
+
+Westergren, U. H. (2007) Partnership Outsourcing Evolution -The Process
+of Creating and Maintaining a Network of Actors. Paper presented at
+\emph{the Fifteenth European Conference on Information Systems}, St.
+Gallen, Switzerland, June 7-9.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.1492}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.8508}}@{}}
+\toprule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+For books & Surname, Initials (year) \emph{Title of Book}. Place of
+Publication: Publisher
+
+Mason, J. (2002) \emph{Qualitative Researching}. London: Sage
+Publications \\
+For book Chapters & Surname, Initials (year) Chapter title. In Editor's
+Surname, Initials, (Ed(s).), \emph{Title of Book}, Place of Publication:
+Publisher, Pages
+
+Walsham, G. (1997) Actor-network theory and IS research: Current status
+and future prospects. In Lee, A.S., Libenau, J. \& J.I. DeGross (Eds.),
+\emph{Information systems and qualitative research}, New York: Chapman
+\& Hall, pp. 466-480 \\
+For journals & Surname, Initials (year) Title of article. \emph{Journal
+Name}, Volume (Number), Pages
+
+Robey, D. (1981) Computer information systems and organization
+structure. \emph{Communications of the ACM}, 24(10), pp. 679-687 \\
+For published conference proceedings & Surname, Initials (year) Title of
+paper. In Surname, Initials (Ed.), \emph{Title of published proceeding
+which may include place and date(s) held}, Place of Publication:
+Publisher, Pages
+
+Öbrand, L., Augustsson, N.-P., Holmström, J., Mathiassen, L. (2012) The
+Emergence of Information Infrastructure Risk Management in IT Services.
+In Sprague, R. H. Jr. (Ed.), \emph{Proceedings of 45\textsuperscript{th}
+Annual Hawaii International Conference on System Sciences (HICSS)}, Los
+Alamitos: IEEE Computer Society, pp. 4904-4913 \\
+For unpublished conference proceedings & Surname, Initials (year) Title
+of paper. Paper presented at \emph{Name of Conference}, Place of
+Conference, Date of Conference
+
+Westergren, U. H. (2007) Partnership Outsourcing Evolution -The Process
+of Creating and Maintaining a Network of Actors. Paper presented at
+\emph{the Fifteenth European Conference on Information Systems}, St.
+Gallen, Switzerland, June 7-9 \\
+For working papers & Surname, Intitials (year) Title of article, (Name
+and number of Working paper series), Institution or organization, Place
+of organization
+
+Nilsson, K. (1989) Designing for Creativity - Toward a Theoretical Basis
+for the Design of Interactive Information Systems. (UMADP-RRIPCS-8.89),
+Institute of Information Processing, Umeå University, Umeå \\
+For newspaper articles & Surname, Initials (year) Title of Article,
+\emph{Newspaper}, Date, Pages
+
+Smith, A. (2012) New IT frightens teenagers. \emph{Daily News}, Jan. 23,
+pp. 7-8 \\
+For electronic sources & If available online, the full URL should be
+supplied at the end of the reference, as well as a date that the
+resource was accessed.
+
+Berggren, U. and Bergkvist, T. (2006) Industrial Service Innovations --A
+Disregarded Growth Engine. NUTEK, Report B2006:6, Available at:
+http://publikationer.tillvaxtverket.se, Accessed May 6, 2009. \\
+\end{longtable}
+
+\end{document}
