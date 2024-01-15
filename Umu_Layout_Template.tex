@@ -11,8 +11,8 @@
 \usepackage[style=apa]{biblatex}
 \usepackage{iftex}
 \usepackage{titlesec}
-\usepackage{fancyhdr} %special header
 \usepackage{sectsty} %special header
+\usepackage{fancyhdr} %special header
 
 % Change all the margins to  2.5cm, headers from edge: 1.25cm, footer from edge: 1.25cm
 \usepackage[margin=2.5cm, top=1.25cm, bottom=1.25cm, headheight=15pt]{geometry}
@@ -40,8 +40,6 @@
   {12pt}
   {}
   [\titlespacing*{\subsection}{0pt}{12pt}{0pt}]
-% Custom Header for Abstract
-\sectionfont{\fontsize{16}{18}\bfseries\centering}
 
 \ifPDFTeX
 %%%%%%%%%%%%%%%% FONT -> Georgia %%%%%%%%%%%%%%%%%
@@ -116,11 +114,7 @@
 
 \begin{document}
 
-
-% \section*{\centering Abstract}
-\section*{Abstract}
-% \section*{Abstract}\label{abstract}
-
+\section*{\centering Abstract}
 
 \emph{Your thesis should start with an abstract. The abstract should be
 approximately 150 words long, written in Georgia 11 points, italics. It
