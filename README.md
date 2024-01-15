@@ -1,10 +1,8 @@
-# Umu-LateX-Thesis
-Thesis template in LaTeX for Umeå University (Department of Informatics).
-
-Feel free to use it :stuck_out_tongue:
+# Umeå University LateX Thesis Template
+Master's Thesis template in LaTeX for Umeå University, specifically the one for the [Department of Informatics](https://www.umu.se/en/department-of-informatics/). Feel free to use it :stuck_out_tongue:
 
 > [!IMPORTANT]
-If you are using Overleaf: project settings (Menu) > change compiler: [LuaLaTex] 
+If you are using [Overleaf](https://www.overleaf.com/): project settings (Menu) > change compiler: [LuaLaTex] 
 
 ## Contributing
 Want to improve or fix something? 
