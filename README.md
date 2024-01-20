@@ -11,8 +11,6 @@ Want to improve or fix something?
 
 You can Fork this repo, and then make a pull request from your fork.
 
-[:-)
-
 ## Acknowledgment:
 
 ```asm
