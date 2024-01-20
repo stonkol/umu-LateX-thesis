@@ -1,6 +1,16 @@
+% version 1.1 (Jan 2024)
+% This LaTeX file is based on the original pdf template
+% from the Informatics Department @ Umeå University
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% IMPORTANT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% In Overleaf: project settings (Menu) > change compiler: [LuaLaTex] 
+% In VSCode: 1. adding this line in your VSCode user preferance.json file: 
+%               "latex-workshop.latex.build.forceRecipeUsage": false, // allows magic comments
+%            2. Add this to the top of your LaTex file (for LuaLaTeX): %!TEX program = lualatex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% IMPORTANT: In Overleaf project settings (Menu) > change compiler: [LuaLaTex] %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Enabling different LaTeX compilers in VS Code
+% %!TEX program = lualatex % uncomment one "%" for enabling it
 
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
@@ -19,7 +29,7 @@
 
 %%%%%%%%%%%%%%%%%% HEADING FORMAT %%%%%%%%%%%%%%%%%%%%%%
 
-% Heading 1 (Section)
+% Heading 1
 \titleformat{\section}
   {\fontsize{16}{18}\bfseries}
   {\thesection}
