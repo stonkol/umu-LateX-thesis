@@ -1,5 +1,5 @@
 # Umeå University LateX Thesis Template
-Master's Thesis template in LaTeX for Umeå University, specifically the one for the Department of [Informatics](https://www.umu.se/en/department-of-informatics/). 
+Master's Thesis template in LaTeX for Umeå University, specifically the one for the Department of [Informatics](https://www.umu.se/en/department-of-informatics/).
 
 ## Feel free to **[download](https://github.com/stonkol/umu-LateX-thesis/blob/main/Umu_Layout_Template.tex)** it :stuck_out_tongue:
 
