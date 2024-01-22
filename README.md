@@ -4,7 +4,17 @@ Master's Thesis template in LaTeX for Umeå University, specifically the one for
 ## Feel free to **[download](https://github.com/stonkol/umu-LateX-thesis/blob/main/Umu_Layout_Template.tex)** it :stuck_out_tongue:
 
 > [!IMPORTANT]
-If you are using [Overleaf](https://www.overleaf.com/): you should go to > `Project Settings (Menu)` > change Compiler to `LuaLaTex` 
+> If you are using [Overleaf](https://www.overleaf.com/): you should go to > `Project Settings (Menu)` > change Compiler to `LuaLaTex`
+
+#### In VSCode:
+
+1. Adding this line in your VSCode user preferance.json:
+
+```json
+file:"latex-workshop.latex.build.forceRecipeUsage": false, // allows magic comments 
+```
+
+2. Then, add this to the top of your LaTex file (for LuaLaTeX): %!TEX program = lualatex
 
 ## Contributing
 Want to improve or fix something? 

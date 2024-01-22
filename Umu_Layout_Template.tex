@@ -1,4 +1,4 @@
-% version 1.2 (Jan 2024)
+% version 1.3 (Jan 2024)
 % This LaTeX file is based on the original pdf template
 % from the Informatics Department @ Umeå University
 
@@ -9,8 +9,8 @@
 %            2. Add this to the top of your LaTex file (for LuaLaTeX): %!TEX program = lualatex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Enabling different LaTeX compilers in VS Code, uncomment one "%" for enabling it
-% %!TEX program = lualatex 
+% Enabling different LaTeX compilers in VS Code
+% % !TEX program = lualatex
 
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
@@ -24,8 +24,8 @@
 \usepackage{sectsty} %special header
 \usepackage{fancyhdr} %special header
 
-% Change all the margins to  2.5cm, headers from edge: 1.25cm, footer from edge: 1.25cm
-\usepackage[margin=2.5cm, top=1.25cm, bottom=1.25cm, headheight=15pt]{geometry}
+% Change all the margins to  2.5cm
+\usepackage[margin=2.5cm, headheight=15pt]{geometry}
 
 %%%%%%%%%%%%%%%%%% HEADING FORMAT %%%%%%%%%%%%%%%%%%%%%%
 
@@ -50,6 +50,8 @@
   {12pt}
   {}
   [\titlespacing*{\subsection}{0pt}{12pt}{0pt}]
+% % Custom Header for Abstract
+% \sectionfont{\fontsize{16}{18}\bfseries\centering}
 
 \ifPDFTeX
 %%%%%%%%%%%%%%%% FONT -> Georgia %%%%%%%%%%%%%%%%%
@@ -125,6 +127,8 @@
 \begin{document}
 
 \section*{\centering Abstract}
+% \section*{Abstract}
+
 
 \emph{Your thesis should start with an abstract. The abstract should be
 approximately 150 words long, written in Georgia 11 points, italics. It
@@ -295,8 +299,7 @@ to the text in the appendix. The only difference is that you must
 include a header, like in the two appendices to this document. A maximum
 of 10 pages can be used for appendices.
 
-\section*{\centering Abstract}
-% \section{Abstract}\label{abstract-1}
+\section{Abstract}\label{abstract-1}
 
 \emph{The open innovation model embraces the purposive flow of internal
 and external ideas as a foundation for innovation and network formation.
